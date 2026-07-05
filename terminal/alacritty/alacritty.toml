@@ -1,0 +1,88 @@
+# ┌──────────────────────────────────────────────────────────────────────────────┐
+# │                                   Theme                                      │
+# └──────────────────────────────────────────────────────────────────────────────┘
+
+[colors.primary]
+foreground = "#c8d3f5"
+background = "#222436"
+
+[colors.cursor]
+text = "#222436"
+cursor = "#c8d3f5"
+
+[colors.selection]
+text = "#c8d3f5"
+background = "#2d3f76"
+
+[colors.normal]
+black = "#1b1d2b"
+red = "#ff757f"
+green = "#c3e88d"
+yellow = "#ffc777"
+blue = "#82aaff"
+magenta = "#c099ff"
+cyan = "#86e1fc"
+white = "#828bb8"
+
+[colors.bright]
+black = "#444a73"
+red = "#ff757f"
+green = "#c3e88d"
+yellow = "#ffc777"
+blue = "#82aaff"
+magenta = "#c099ff"
+cyan = "#86e1fc"
+white = "#c8d3f5"
+
+
+
+# ┌──────────────────────────────────────────────────────────────────────────────┐
+# │                                   FONT                                       │
+# └──────────────────────────────────────────────────────────────────────────────┘
+
+[font]
+normal = { family = "IosevkaTerm Nerd Font Mono", style = "Regular" }
+bold = { family = "IosevkaTerm Nerd Font Mono", style = "Bold" }
+italic = { family = "IosevkaTerm Nerd Font Mono", style = "Italic" }
+size = 15
+
+
+
+# ┌──────────────────────────────────────────────────────────────────────────────┐
+# │                                  WINDOW                                      │
+# └──────────────────────────────────────────────────────────────────────────────┘
+
+[window]
+opacity = 1
+option_as_alt = "Both"
+padding = {x = 15, y = 35}
+
+# ┌──────────────────────────────────────────────────────────────────────────────┐
+# │                                  CURSOR                                      │
+# └──────────────────────────────────────────────────────────────────────────────┘
+
+[cursor]
+style = "Block"
+blink_interval = 500
+unfocused_hollow = true
+vi_mode_style = "Block"
+
+
+# ┌──────────────────────────────────────────────────────────────────────────────┐
+# │                                 TERMINAL                                     │
+# └──────────────────────────────────────────────────────────────────────────────┘
+
+[general]
+live_config_reload = true
+
+[terminal]
+# For best Neovim compatibility, install alacritty terminfo:
+# sudo tic -xe alacritty,alacritty-direct extra/alacritty.info
+# shell = "C:\\Windows\\System32\\wsl.exe"
+shell = { program = "C:\\Windows\\System32\\wsl.exe", args = ["~",]} 
+
+[env]
+TERM = "xterm-256color"
+
+[hints]
+enabled = []
